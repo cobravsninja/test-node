@@ -15,4 +15,5 @@ http.createServer(function(request, response) {
     response.write('from: ' + request.connection.remoteAddress + '\n');
     response.write('headers:' + '\n');
     response.end(util.inspect(request.headers));
+    count++;
 }).listen(6969)
