@@ -11,7 +11,7 @@ http.createServer(function(request, response) {
         return;                                                                                                                                                               
     }
     response.writeHead(200, { "Content-Type": "text/plain" });
-    response.write('hostname: ' + os.hostname() + '\n');
+    response.write('0.2 version (broken), hostname: ' + os.hostname() + '\n');
     response.write('from: ' + request.connection.remoteAddress + '\n');
     response.write('headers:' + '\n');
     response.end(util.inspect(request.headers));
