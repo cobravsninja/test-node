@@ -6,8 +6,7 @@ var count = 0;
 http.createServer(function(request, response) {
     if(count >= 3) {                                                                                                                                                          
         response.writeHead(500, { "Content-Type": "text/plain" });                                                                                                            
-        response.end('fake error');                                                                                                                                           
-        count = 0;                                                                                                                                                            
+        response.end('fake error');                                                                                                                                                                                                                                                                                             
         return;                                                                                                                                                               
     }
     response.writeHead(200, { "Content-Type": "text/plain" });
